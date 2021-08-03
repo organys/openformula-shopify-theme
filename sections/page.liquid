@@ -1,7 +1,3 @@
-<!-- Bold: Memberships (page) -->
-{% include 'bold_mem_helper' with 'page' %}
-<!-- end Bold code -->
-
 <link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'section-main-page.css' | asset_url }}" media="print" onload="this.media='all'">
 
@@ -18,6 +14,11 @@
   </h2>
   <div class="rte">
     {%- if section.settings.page.content != blank -%}
+    
+    	<!-- Bold: Memberships (page) -->
+        {% include 'bold_mem_helper' with 'page' %}
+        <!-- end Bold code -->
+    
       {{ section.settings.page.content }}
     {%- else -%}
       <div class='page-placeholder-wrapper placeholder'>
