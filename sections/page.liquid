@@ -13,11 +13,11 @@
     {%- endif -%}
   </h2>
   <div class="rte">
-    {%- if section.settings.page.content != blank -%}
+    {%- if section.settings.page.content != blank -%}    
     
-    	<!-- Bold: Memberships (page) -->
-        {% include 'bold_mem_helper' with 'page' %}
-        <!-- end Bold code -->
+			<!-- Bold: Memberships (page) -->
+            {% include 'bold_mem_helper' with 'page' %}
+            <!-- end Bold code -->
     
       {{ section.settings.page.content }}
     {%- else -%}
